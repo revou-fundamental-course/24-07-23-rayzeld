@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+nav {
+    position: fixed;
+    z-index: 9999;
+    background-color: #1a8be7;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navdiv {
+    width: 1080px;
+    margin: auto;
+    /* background-color: rgb(26, 139, 231); */
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 600;
+    /* border: 1px solid white; */
+}
+
+.logo a:hover, .logo a:active, .logo a:visited, logo a:link {
+    color: white;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 0px;
+    height: 80px;
+    /* border: 1px solid white; */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 29px;
+    height: 80px;
+}
+
+.navdiv ul a:hover {
+    background-color: #1a6aa7;
+}
+
+.container-body {
+    width: 1080px;
+    margin: 0 auto;
+    color: #2e2e2e;
+    padding: 130px 0;
+    background-color: white;
+}
+
+.container-body h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0px auto 30px;
+}
+
+.container-body p {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+.container-body .container-body-2 {
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* clearfix end */
+
+.container-body-2 .left-body {
+    width: 590px;
+    height: auto;
+    /* border: 1px solid black; */
+    float: left;
+    overflow: hidden;
+}
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* HIDE IMAGES */
+  .mySlides {
+    display: none;
+  }
+  
+  /* TOMBOL NEXT DAN PREVIOUS */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* POSISI TOMBOL */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #1a8be7;
+  }
+  
+  /* CAPTION TEKS */
+  .text {
+    color: #2e2e2e;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* INDIKATOR TITIK */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #1a8be7;
+  }
+  
+  /* FADING ANIMATION */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.left-body .garis {
+    width: 20%;
+    height: 3px;
+    background-color: #e6e6e6;
+    margin: auto;
+    border-radius: 3px;
+}
+
+/* .left-body .container-number .number-1,
+.left-body .container-number .number-2,
+.left-body .container-number .number-3 {
+    background-color: #1a8be7;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    float: left;
+} */
+
+.container-number .list {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.container-number .list .list-box {
+    /* border: 1px solid black; */
+    width: 40px;
+    float: left;
+}
+
+.container-number .list .number {
+    width: 40px;
+    height: 40px;
+    background-color: #1a8be7;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left-body .container-number p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 450;
+    padding-left: 50px;
+}
+
+.left-body p {
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+
+.container-body-2 .right-body {
+    width: 460px;
+    /* height: 1000px; */
+    /* border: 1px solid black; */
+    float: right;
+    padding: 40px 35px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-body-2 .right-body h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.container-body-2 .right-body p {
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+form label,
+form input,
+form option {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+form input[placeholder] {
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid #d4d4d4;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+form select {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    padding-left: 8px;
+    font-weight: 100;
+    color: #8d8d8d;
+    border-radius: 4px;
+    border: 2px solid #d4d4d4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form select option {
+    font-weight: normal;
+;
+}
+
+form input[type="submit"] {
+    background-color: #1a78c4;
+    color: #e3e3e3;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-body .container-paket {
+    margin-top: 50px;
+    background-color: #1a8be7;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.container-body .container-paket h1 {
+    color: white;
+    margin: auto;
+    line-height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
+}
+
+.pilihan-paket {
+    margin-top: 40px;
+    height: 500px;
+    /* background-color: brown; */
+}
+
+.pilihan-paket .box-paket {
+    width: 300px;
+    height: 150px;
+    /* background-color: rgb(209, 209, 209); */
+    position: relative;
+    top: 50px;
+    left: 30px;
+    float: left;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box-paket .location-icon,
+.box-paket-2 .location-icon {
+    float: left;
+}
+
+.pilihan-paket .box-paket p,
+.pilihan-paket .box-paket-2 p {
+    text-align: left;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 60px;
+    padding-top: 10px;
+}
+
+.pilihan-paket .box-paket-2 {
+    width: 300px;
+    height: 150px;
+    /* background-color: rgb(209, 209, 209); */
+    position: relative;
+    top: 80px;
+    left: 200px;
+    float: left;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container-body .closing {
+    text-align: center;
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    margin-top: 30px;
+    height: auto;
+    padding: 100px;
+}
+
+.container-body .closing p {
+    font-size: 16px;
+    font-style: normal;
+}
+
+.container-body .closing input {
+    margin: 60px 0;
+    background-color: #1a8be7;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-family: Montserrat;
+    padding: 20px 70px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 24px;
+}

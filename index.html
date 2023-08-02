@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TravelKuy</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="navdiv">
+        <label class="logo"><a href="#">travelkuy.id</a></label>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#container-paket">Paket Liburan</a></li>
+          <li><a href="#closing">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="container-body">
+
+      <!-- JUDUL -->
+      <h1>travelkuy!</h1>
+      <p>Menikmati indahnya dunia dimana saja dan kapan saja. Travel kuy!</p>
+      <!-- JUDUL END -->
+
+      <div class="container-body-2 cf">
+        <!-- BODY LEFT-->
+        <div class="left-body">
+
+          <!-- SLIDESHOW CONTAINER -->
+          <div class="slideshow-container">
+            <!-- FULL-WIDTH IMAGES -->
+            <div class="mySlides fade">
+              <img src="img/foto-1.png" style="width: 100%" />
+              <div class="text">"Bepergian menjadikanmu sederhana, kamu melihat betapa kecilnya tempat yang kamu tinggali di dunia."
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/foto-2.png" style="width: 100%" />
+              <div class="text">"Bangun sendirian di kota yang aneh adalah satu di antara sensasi paling menyenangkan di dunia."</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/foto-3.png" style="width: 100%" />
+              <div class="text">"Kalau kamu tak berhenti dan melihat-lihat sebentar, kamu mungkin akan melewatkan indahnya dunia."</div>
+              
+            </div>
+
+            <!-- TOMBOL NEXT AND PREVIOUS-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- TITIK LINGKARAN -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+            <br><br><br><br><br><br>
+            <div class="garis"></div>
+            <br><br><br>
+            
+            <!-- LIST -->
+            <p>Mengapa memesan di Travelkuy.id?</p>
+
+            <div class="container-number">
+              <div class="list">
+                <div class="list-box">
+                  <div class="number">1</div>
+                </div>
+                <p>Bebas transaksi dimana saja dan kapan saja, mulai dari desktop, aplikasi mobile, atau situs web mobile.</p>
+                </div>
+
+              <div class="list">
+                <div class="list-box">
+                  <div class="number">2</div>
+                </div>
+                <p>Metode pembayaran semakin fleksibel dengan berbagai pilihan, seperti Transfer Bank, Bayar Tunai di Konter, ATM, sampai Internet Banking.</p>
+              </div>
+
+              <div class="list">
+                <div class="list-box">
+                  <div class="number">3</div>
+                </div>
+                <p>Layanan yang terpercaya! Anda akan mendapatkan sesuai dengan apa yang anda bayar dijamin 100%.</p>
+              </div>
+            </div>
+            <!-- LIST -->
+        </div>
+        <!-- BODY LEFT END -->
+
+        <!-- BODY RIGHT -->
+        <div class="right-body">
+          <h2>Form Registrasi</h2>
+          <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+
+          <form action="#">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" placeholder="Nama awal dan akhir" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" />
+
+            <label for="preferensi">Kemana preferensi liburanmu?</label>
+            <select name="preferensi" id="preferensi">
+              <option value="">Pilih destinasi</option>
+              <option value="asia">Asia</option>
+              <option value="afrika">Afrika</option>
+              <option value="amerika">Amerika</option>
+              <option value="eropa">Eropa</option>
+              <option value="australia">Australia</option>
+            </select>
+            <input type="submit" value="Kirim" />
+          </form>
+        </div>
+      </div>
+    
+      <!-- BODY RIGHT END -->
+
+      <!-- PAKET KAMI -->
+      <div class="container-paket" id="container-paket">
+        <img src="img/foto-4.png" alt="">
+          <h1>Paket Kami</h1>
+      </div>
+      
+      <section class="pilihan-paket">
+        <div class="box-paket">
+          <div class="location-icon"><img src="img/icon-1.png" alt="asia"></div>
+          <p><b>Asia</b></p>
+          <p>Travel dan berwisata di negara-negara di benua Asia. Kunjungi Jepang, Singapura, Thailand, Hongkong, dll.</p>
+        </div>
+
+        <div class="box-paket">
+          <div class="location-icon"><img src="img/icon-2.png" alt="afrika"></div>
+          <p><b>Afrika</b></p>
+          <p>Travel dan berwisata di negara-negara benua Afrika. Kunjungi Maroko, Tunisia, Mesir, dll.</p>
+        </div>
+
+        <div class="box-paket">
+          <div class="location-icon"><img src="img/icon-3.png" alt="amerika"></div>
+          <p><b>Amerika</b></p>
+          <p>Travel dan berwisata di negara-negara benua Amerika. Kunjungi Amerika Serikat, Kanada, Argentina, dll.</p>
+        </div>
+
+        <div class="box-paket-2">
+          <div class="location-icon"><img src="img/icon-4.png" alt="eropa"></div>
+          <p><b>Eropa</b></p>
+          <p>Travel dan berwisata di negara-negara benua Eropa. Kunjungi Jerman, Italia, Perancis, Inggris, Swiss, dll.</p>
+        </div>
+
+        <div class="box-paket-2">
+          <div class="location-icon"><img src="img/icon-5.png" alt="australia"></div>
+          <p><b>Australia</b></p>
+          <p>Travel dan berwisata di negara-negara benua Australia. Kunjungi Australia, New Zealand, Fiji, dll.</p>
+        </div>
+      </section>
+      <!-- PAKET KAMI END -->
+
+      <!-- CLOSING -->
+      <div class="closing" id="closing">
+        <h1>Tunggu apalagi?</h1>
+        <p><i>Ayo berwisata keliling dunia dengan Travelkuy.id. Travel kuy!</i></p>
+
+        <input type="submit" value="PESAN SEKARANG">
+
+        <p>Hubungi Kami 0282-123456</p>
+      </div>
+      <!-- CLOSING -->
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+       <p>Copyright by <b>rayzeld</b></p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
