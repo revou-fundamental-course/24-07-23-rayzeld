@@ -438,3 +438,19 @@ footer {
     line-height: 50px;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 480px) {
+    .container-body .left-body,
+    .container-body .right-body {
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .navdiv {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
