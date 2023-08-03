@@ -28,3 +28,30 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex - 1].style.display = "block";
 dots[slideIndex - 1].className += " active";
 }
+
+function validateForm() {
+    let x = document.forms["myForm"]["fpreferensi"].value;
+    if (x == "") {
+    alert("Preferensi liburan harus diisi");
+    return false;
+    }
+}
+
+function validateForm() {
+    let x = document.forms["myForm"]["femail"].value;
+    if (x == "") {
+    alert("Email harus diisi");
+    return false;
+    }
+}
+
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+    alert("Nama harus diisi");
+    return false;
+    }
+}
+
+
+

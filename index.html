@@ -103,14 +103,14 @@
           <h2>Form Registrasi</h2>
           <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
 
-          <form action="#">
+          <form action="#" name="myForm" onsubmit="return validateForm()">
             <label for="name">Nama Lengkap:</label>
-            <input type="text" id="name" placeholder="Nama awal dan akhir" />
+            <input type="text" id="name" placeholder="Nama awal dan akhir" name="fname" required/>
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="example@gmail.com" />
+            <input type="email" id="email" placeholder="example@gmail.com" name="femail" required/>
 
             <label for="preferensi">Kemana preferensi liburanmu?</label>
-            <select name="preferensi" id="preferensi">
+            <select name="fpreferensi" id="preferensi" required>
               <option value="">Pilih destinasi</option>
               <option value="asia">Asia</option>
               <option value="afrika">Afrika</option>
